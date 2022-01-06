@@ -1,0 +1,37 @@
+- Create a token/coin
+- Create amount token
+ + Minter
+ + Suply
+ + Balance
+- Sent token
+ + Amount <= balance else Số dư không đủ
+ + Balance sender -= amount
+ + Balance receive += amount
+- Amount
+
+learn 06/01/2021
+Learn for data types, enums, mapping
+
+bool myBoolean = true; // false or true
+unit myUnsignedInteger = 10; // non-negative value
+int myInteger = -10;
+string myString = "Hello guys";
+address myAddress = msg.sender;
+
+
+How to use array
+
+contract game {
+    struct player {
+        string fullName;
+        uint age;
+        string sex;
+    }
+
+    // add data to player
+    // memory là cách lưu trữ
+    function addPlayer(string memory fullName, uint age, string memory sex) public {
+        player(fullName, age, sex);
+    }
+}
+

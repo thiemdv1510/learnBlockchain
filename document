@@ -33,5 +33,20 @@ contract game {
     function addPlayer(string memory fullName, uint age, string memory sex) public {
         player(fullName, age, sex);
     }
+
+    // Auction
+    - Inbox
+     + Thời gian phiến đấu giá
+     + Giá trị đặt nó phải lớn hơn giá trị lớn nhất tại thời điểm đó
+     + Bid != 0
+
+    - Withdraw
+      + amount > 0
+      + Rút amount = bid
+      + After send = 0
+    - AuctionEnd
+      + Khi nào kết thúc phiên đấu giá
+      + Sự kiện: tranfer
+
 }
 
